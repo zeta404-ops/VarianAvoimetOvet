@@ -1,0 +1,126 @@
+* { box-sizing: border-box }
+
+body {
+    background-color: #282c34;
+    margin: 50px; padding: 1px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*headers and texts*/
+
+.T1{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.T2{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 17px;
+
+}
+
+.T3{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+
+}
+
+.T4{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.T5{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+
+ /* video size and pos.*/
+.vidclass{
+    display: flex;
+    justify-content: center;
+}
+
+/*pic pos*/
+
+
+
+
+
+.mainD img{
+    width: 350px; 
+    height: 300px; 
+    border-radius: 100%;
+    object-fit: cover; 
+    
+    
+  }
+
+  /* texts*/
+  p {
+
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: 'Roboto';
+  }
+  .picz {
+     float: left; 
+     margin-right: 55px; 
+     margin-bottom: 30px;
+  }
+
+  /*responsive*/
+
+@media only screen and (max-width: 800px){
+    .mainD{
+      flex-direction: column;
+      
+}
+    }
+
+
+ /*back to top*/
+ 
+
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  transition: all .4s;
+}
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
